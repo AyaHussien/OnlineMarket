@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:action="@{/SellerRegister}" method="get">
+        <input type="submit" value="Seller Register" />
+    </form>
+    <form th:action="@{/BuyerRegister}" method="get">
+        <input type="submit" value="Buyer Register" />
+    </form>
+	<form th:action="@{/}" method="get">
+        <input type="submit" value="Back" />
+    </form>
+</body> 
+</html>

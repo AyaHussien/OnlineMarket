@@ -1,0 +1,40 @@
+<h3>The Products in {{this.name}} store:</h3>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Store Name</th>
+            <th>Brand</th>
+            <th>price</th>
+            <th>Amount</th>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of prods ; let i=index">
+                <td>{{i+1}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.storeName}}</td>
+                <td>{{s.brand}}</td>
+                <td>{{s.price}}</td>
+                <td>{{s.counter}}</td>
+                <td><input type="submit" value="Edit" class="btn btn-info" (click)="Add2(i+1)"></td>     
+                <td><input type="submit" value="Delete" class="btn btn-danger" (click)="Add3(i+1)"></td>                                           
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

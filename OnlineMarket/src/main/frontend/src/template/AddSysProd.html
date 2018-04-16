@@ -1,0 +1,23 @@
+<h4 >Add product fl system ya admin yalla bsor3a</h4>
+<div class="container">
+    <form (ngSubmit)="AddSysProd(name.value,brand.value,Lprice.value,Hprice.value)">
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" #name class="form-control">
+        </div>
+       <div class="form-group">
+            <label >Brand</label>
+            <input type="text" #brand class="form-control">
+       </div>
+       <div class="form-group">
+            <label >Low Price</label>
+            <input type="text" #Lprice class="form-control">
+       </div>
+       <div class="form-group">
+            <label >high Price</label>
+            <input type="text" #Hprice class="form-control">
+       </div>
+       <input type="submit" value="Add" class="btn btn-default">
+       
+    </form>
+</div>

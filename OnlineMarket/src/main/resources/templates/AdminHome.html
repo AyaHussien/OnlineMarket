@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home</title>
+</head>
+<body>
+	<h1>Admin Home</h1>
+	<form th:action="@{/AddBrand}" method="get">
+        <input type="submit" value="Add Brand" />
+    </form>
+    <form th:action="@{/AddSysProd}" method="get">
+        <input type="submit" value="Add system product" />
+    </form>
+	
+</body>
+</html>

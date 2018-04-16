@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Home</title>
+</head>
+<body>
+	<h1>Seller Home</h1>
+	<form th:action="@{/AddStore}" method="get">
+        <input type="submit" value="Add new Store" />
+    </form>
+    <form th:action="@{/AddProd}" method="get">
+        <input type="submit" value="Add new Product" />
+    </form>
+</body>
+</html>

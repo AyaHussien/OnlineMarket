@@ -1,0 +1,16 @@
+<h4 >Add brand ya admin yalla bsor3a</h4>
+<div class="container">
+    <form (ngSubmit)="AddBrand(name.value,des.value)">
+        <div class="form-group">
+            <label >Name</label>
+            <input type="text" #name class="form-control">
+        </div>
+       <div class="form-group">
+            <label >Description</label>
+            <input type="text" #des class="form-control">
+       </div>
+       
+       <input type="submit" value="Add" class="btn btn-default">
+       
+    </form>
+</div>

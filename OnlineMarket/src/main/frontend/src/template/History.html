@@ -1,0 +1,27 @@
+<h3>History</h3>
+<div class="container">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <th>type</th>
+            <th>Product Name</th>
+            <th>Store Name</th>
+            <th>Colla Name</th>
+            <th>price</th>
+            <th>Old price</th>
+            <th>Amount</th>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let s of Actions">
+                <td>{{s.type}}</td>
+                <td>{{s.prodName}}</td>
+                <td>{{s.storeName}}</td>
+                <td>{{s.colla}}</td>
+                <td>{{s.price}}</td>
+                <td>{{s.oldPrice}}</td>
+                <td>{{s.amount}}</td>
+                <td><input type="submit" value="Undo" class="btn btn-default" (click)="Add1(s.type,s.amount,s.prodName,s.storeName,s.oldPrice,s.id)"></td>     
+            </tr>
+        </tbody>
+    </table>
+</div>
